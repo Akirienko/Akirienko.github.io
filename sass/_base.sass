@@ -1,0 +1,303 @@
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  scroll-behavior: smooth
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+
+.bg
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+
+html,body
+  margin: 0
+  padding: 0
+  font-size: 1.3vw
+  line-height: 1
+  font-family: $reg
+  opacity: 1
+
+.overlay
+  min-width: 320px
+  width: 100%
+  height: 100%
+  overflow-x: hidden
+
+
+@mixin  button($bgc, $cl, $br, $bgch, $hcl, $brh)
+  padding: .8rem 1.2rem
+  background-color: $bgc
+  border-radius: .2rem
+  color: $cl
+  text-transform: uppercase
+  outline: none
+  border-color: $br
+  border-width: 1px
+  border-style: solid
+  &:hover,
+  &:focus,
+  &:active
+    transition: all .5s linear
+    color: $hcl
+    background-color: $bgch
+    border-color: $brh
+    border-width: 1px
+    border-style: solid
+
+h1
+    font-size: 4.5vw
+    margin: .1rem 0
+    line-height: 1
+h2
+    font-size: 4vw
+    margin: .1rem 0
+    line-height: 1
+h3
+    font-size: 3.5vw
+    margin: .1rem 0
+    line-height: 1
+
+h4
+    font-size: 3vw  
+    margin: .1rem 0
+    line-height: 1
+h5
+    font-size: 2.5vw
+    margin: .1rem 0
+    line-height: 1
+h1, h2, h3, h4
+  font-family: $bold
+  text-transform: initial
+  padding: 0
+p,a
+  margin: 0
+  padding: 0
+  font-family: $reg
+a
+  text-decoration: none
+  &:hover,
+  &:focus,
+  &:active
+    transition: all .5s linear
+    color: $pink
+  i
+    &:hover
+      transition: all .5s linear
+option
+  color: black
+input, select
+  padding: .7rem  1rem
+  border-radius: .2rem
+  border: 1px solid transparent
+  width: 100%
+  outline: none
+  background: none
+  border: 1px solid white
+  border-radius: 1.5rem
+  color: white
+  &:focus::-webkit-input-placeholder
+    opacity: 0
+.img-responsive
+  object-fit: contain
+  object-position: center
+  width: 100%
+  height: 100%
+
+.img-responsive2
+  object-fit: contain
+  object-position: center
+  width: 100%
+  height: 100%
+  padding-top: 1rem
+
+video
+  width: 100%
+
+.black
+  color: $black
+  font-size: 1rem
+  padding-top: 0.7rem
+  padding-bottom: 1rem
+.blackBold
+  font-size: 1rem
+  color: black
+  font-weight: bolder
+  padding-top: 1rem
+.white
+  color: $white
+  padding-top: 0.5rem
+  font-size: 1.3rem
+.whiteUpper
+  color: $white
+  padding-top: 0.5rem
+  font-size: 1rem
+
+.formRem
+  padding: 1.5rem 2rem
+  background-color: gray
+  div
+    margin: 0.7rem 0
+    input
+      color: white
+
+.placeholder
+  color: white     
+
+.form
+  div
+    margin: .5rem 0
+
+.yellow
+  color: $yellow1
+.sunray
+  color: $sunray
+.orange
+  color: $orange
+.pink
+  color: $pink
+.upper
+  text-transform: uppercase
+.lower
+  text-transform: lowercase
+.regular
+  font-family: $reg
+.bold
+  font-family: $bold
+.initial
+  text-transform: initial
+.center
+  text-align: center
+.shadow-gray
+  box-shadow: 2px 8px 50px 4px rgba(53, 53, 53, .8)
+
+.button
+  background-color: red
+  border: none
+  outline: none
+  color: white
+  border-radius: 1rem
+  padding: .8rem 1.2rem
+  margin-top: 1.3rem
+  &:hover,
+  &:active,
+  &:focus
+    outline: none
+    background-color: white
+    color: red
+    border: 1px solid red
+button
+  outline: none
+  &:hover,
+  &:active,
+  &:focus
+    outline: none
+
+.bg
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+
+.list
+  font-size: 1.2rem
+  line-height: 1.5rem
+  li
+    padding-top: 0.7rem
+  
+
+
+// ul
+//   display: block
+//   margin: 0
+//   padding: 0
+//   li
+//     padding: .5rem .7rem
+//     display: flex
+//     align-items: center
+//     a
+//       color: $white
+
+a
+  color: white
+section
+  padding: 4rem 0
+
+.slick-arrow
+  position: absolute
+  top: 40%
+  font-size: 3em
+  z-index: 10
+
+
+::placeholder  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white
+  opacity: 1
+
+.fa-angle-left
+  left: 0
+  color: $gray1
+  &:hover
+    color: $pink
+.fa-angle-right
+  right: 0
+  color: $gray1
+  &:hover
+    color: $pink
+
+
+#style-2::-webkit-scrollbar-track
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+  border-radius: 10px
+  background-color: #F5F5F5
+
+
+#style-2::-webkit-scrollbar
+  width: 5px
+  background-color: #e7e7e7
+
+
+#style-2::-webkit-scrollbar-thumb
+  border-radius: 10px
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+  background-color: #acacac
+
+.remodal
+  padding: 0!important
+
+.remodal-close
+  color: $white
+  left: initial
+  right: 0
+
+span.help-block.form-error
+  color: red
